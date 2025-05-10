@@ -1,0 +1,44 @@
+{% extends "base.html" %}
+
+{% block title %}About Us - Shafi's Ice Cream Shop{% endblock title %}
+
+{% block body %}
+<div class="container my-5">
+    <div class="text-center mb-4">
+        <h1 class="display-4">About Shafi's Ice Cream Shop</h1>
+        <p class="lead text-muted">Bringing sweetness to your life, one scoop at a time!</p>
+    </div>
+
+    <div class="row align-items-center mb-5">
+        <div class="col-md-6">
+            <img src="static/images/vanilla.jpg" class="img-fluid rounded" alt="Our Story">
+        </div>
+        <div class="col-md-6">
+            <h2>Our Story</h2>
+            <p>Shafi’s Ice Cream Shop began with a simple dream – to craft the creamiest, most delightful ice creams using only the freshest ingredients. What started as a family recipe quickly grew into a local favorite.</p>
+            <p>From classic vanilla to exotic mango chili swirl, we’re all about flavor, fun, and family!</p>
+        </div>
+    </div>
+
+    <div class="row text-center mb-5">
+        <div class="col-md-4">
+            <h3>🍨 Fresh Ingredients</h3>
+            <p>We source only natural and local ingredients to create every scoop.</p>
+        </div>
+        <div class="col-md-4">
+            <h3>🏆 Award-Winning</h3>
+            <p>Recognized by local food critics for taste and creativity.</p>
+        </div>
+        <div class="col-md-4">
+            <h3>🌱 Eco-Friendly</h3>
+            <p>Committed to sustainability with recyclable packaging and energy-efficient tools.</p>
+        </div>
+    </div>
+
+    <div class="text-center">
+        <h2>Meet the Founder</h2>
+        <img src="/static/images/founder.jpg" class="rounded-circle my-3" width="150" height="150" alt="Founder Image">
+        <p class="lead">"I started this journey with love, sugar, and a scoop of passion!" – <strong>Shafi</strong></p>
+    </div>
+</div>
+{% endblock body %}

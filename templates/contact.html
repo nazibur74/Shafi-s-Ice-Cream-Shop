@@ -1,0 +1,134 @@
+{% extends "base.html" %}
+
+{% block title %}Contact{% endblock title %}
+
+{% block body %}
+
+<style>
+  .contact-bg {
+    position: relative;
+    background-image: url('/static/images/contact.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+  }
+
+  .contact-form-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 0.85); /* Light background */
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+    max-width: 500px;
+    width: 90%;
+  }
+
+  .contact-info-section {
+    background-color: #f9f9f9;
+    padding: 40px 1px;
+    
+  }
+
+  .contact-step {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 30px;
+  }
+
+  .contact-step i {
+    font-size: 24px;
+    margin-right: 15px;
+    color: #0d6efd;
+    flex-shrink: 0;
+  }
+
+  .contact-step h6 {
+    margin: 0;
+    font-weight: bold;
+  }
+
+  .full-width-map {
+    width: 100%;
+    height: 450px;
+    border: none;
+  }
+</style>
+
+<!-- Background with Contact Form -->
+<div class="contact-bg">
+  <div class="contact-form-overlay">
+    <h2 class="text-center mb-3">Get in Touch</h2>
+    <form method="POST" action="/contact">
+    {% csrf_token %}
+      <div class="mb-3">
+        <label for="name" class="form-label">Your Name</label>
+        <input type="text" class="form-control" id="name" name="name" placeholder="Enter your name" required>
+      </div>
+      <div class="mb-3">
+        <label for="phone" class="form-label">Your Phone</label>
+        <input type="text" class="form-control" id="phone" name="phone" placeholder="Enter your phone number" required>
+      </div>
+      <div class="mb-3">
+        <label for="email" class="form-label">Your Email</label>
+        <input type="email" class="form-control" id="email" name="email" placeholder="Enter your email address" required>
+      </div>
+      <div class="mb-3">
+        <label for="message" class="form-label">Your Message</label>
+        <textarea class="form-control" id="message" name="message" rows="4" placeholder="Type your message..." required></textarea>
+      </div>
+      <div class="d-grid">
+        <button type="submit" class="btn btn-primary">Send</button>
+      </div>
+    </form>
+  </div>
+</div>
+
+<!-- Contact Info Section -->
+<div class="contact-info-section">
+  <div class="container">
+    <h3 class="mb-3 text-center">How You Can Reach Us</h3>
+
+    <div class="contact-step">
+      <i class="bi bi-telephone-fill"></i>
+      <div>
+        <h6>Phone</h6>
+        <p>+880 1797-971474</p>
+      </div>
+    </div>
+
+    <div class="contact-step">
+      <i class="bi bi-envelope-fill"></i>
+      <div>
+        <h6>Email</h6>
+        <p>shafisicecream@hotmail.com</p>
+      </div>
+    </div>
+
+    <div class="contact-step">
+      <i class="bi bi-geo-alt-fill"></i>
+      <div>
+        <h6>Address</h6>
+        <p>Kakar Baari, Birulia, Savar, Dhaka-1214, Bangladesh</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Google Map -->
+<div>
+  <iframe
+    class="full-width-map"
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3651.0000000000005!2d90.320788!3d23.876589!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c4f5f7f7f7f7%3A0x7f7f7f7f7f7f7f7f!2sDaffodil%20International%20University%2C%20Ashulia%20Campus%2C%20Savar%2C%20Dhaka%2C%20Bangladesh!5e0!3m2!1sen!2sus!4v1683567646619!5m2!1sen!2sus"
+    allowfullscreen=""
+    loading="lazy"
+    referrerpolicy="no-referrer-when-downgrade">
+  </iframe>
+</div>
+
+<!-- Bootstrap Icons -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+{% endblock body %}

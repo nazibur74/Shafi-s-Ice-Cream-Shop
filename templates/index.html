@@ -1,0 +1,167 @@
+{% extends "base.html" %}
+
+{% block title %}Home{% endblock title %}
+
+{% block body %}
+
+<div class="container-fluid px-0">
+  <div id="carouselExampleCaptions" class="carousel slide">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="/static/images/i3.jpg" class="d-block w-100" alt="..." style="height: 500px; object-fit: cover;">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>First slide label</h5>
+          <p>Some representative placeholder content for the first slide.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="/static/images/i2.jpg" class="d-block w-100" alt="..." style="height: 500px; object-fit: cover;">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Second slide label</h5>
+          <p>Some representative placeholder content for the second slide.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="/static/images/i5.jpg" class="d-block w-100" alt="..." style="height: 500px; object-fit: cover;">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Third slide label</h5>
+          <p>Some representative placeholder content for the third slide.</p>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+</div>
+
+
+<div class="container my-3">
+  <div class="text-center mb-4">
+    <h1 class="display-4 fw-bold" style="color: black;">Our Ice Cream Collection</h1>
+  </div>
+
+  <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-5">
+
+    <div class="col">
+      <a href="/icecream/vanilla" class="text-decoration-none text-dark">
+        <div class="card shadow-sm h-100">
+          <img src="/static/images/vanilla1.jpg" class="card-img-top" style="height:225px; object-fit:cover;" alt="Vanilla Ice Cream">
+          <div class="card-body">
+            <h5 class="card-title">Vanilla Delight</h5>
+            <p class="card-text">Classic and creamy vanilla ice cream made with real vanilla beans for a smooth, timeless flavor.</p>
+          </div>
+        </div>
+      </a>
+    </div>
+
+    <div class="col">
+      <a href="/icecream/chocolate" class="text-decoration-none text-dark">
+        <div class="card shadow-sm h-100">
+          <img src="/static/images/chocolate.jpg" class="card-img-top" style="height:225px; object-fit:cover;" alt="Chocolate Ice Cream">
+          <div class="card-body">
+            <h5 class="card-title">Choco Bliss</h5>
+            <p class="card-text">Rich and indulgent chocolate ice cream crafted with premium cocoa for chocoholics everywhere.</p>
+          </div>
+        </div>
+      </a>
+    </div>
+
+    <div class="col">
+      <a href="/icecream/strawberry" class="text-decoration-none text-dark">
+        <div class="card shadow-sm h-100">
+          <img src="/static/images/strawberry.jpg" class="card-img-top" style="height:225px; object-fit:cover;" alt="Strawberry Ice Cream">
+          <div class="card-body">
+            <h5 class="card-title">Strawberry Swirl</h5>
+            <p class="card-text">Luscious strawberry ice cream with real fruit bits and a swirl of strawberry puree.</p>
+          </div>
+        </div>
+      </a>
+    </div>
+
+    <div class="col">
+      <a href="/icecream/mango" class="text-decoration-none text-dark">
+        <div class="card shadow-sm h-100">
+          <img src="/static/images/mango.jpg" class="card-img-top" style="height:225px; object-fit:cover;" alt="Mango Ice Cream">
+          <div class="card-body">
+            <h5 class="card-title">Mango Tango</h5>
+            <p class="card-text">Tropical mango flavor that dances on your tongue, made from handpicked Alphonso mangoes.</p>
+          </div>
+        </div>
+      </a>
+    </div>
+
+    <div class="col">
+      <a href="/icecream/pistachio" class="text-decoration-none text-dark">
+        <div class="card shadow-sm h-100">
+          <img src="/static/images/pistachio.jpg" class="card-img-top" style="height:225px; object-fit:cover;" alt="Pistachio Ice Cream">
+          <div class="card-body">
+            <h5 class="card-title">Pistachio Punch</h5>
+            <p class="card-text">A nutty and buttery pistachio ice cream packed with crunchy roasted pistachio bits.</p>
+          </div>
+        </div>
+      </a>
+    </div>
+
+    <div class="col">
+      <a href="/icecream/cookies" class="text-decoration-none text-dark">
+        <div class="card shadow-sm h-100">
+          <img src="/static/images/cookies.jpg" class="card-img-top" style="height:225px; object-fit:cover;" alt="Cookies and Cream Ice Cream">
+          <div class="card-body">
+            <h5 class="card-title">Cookies & Cream</h5>
+            <p class="card-text">Creamy vanilla ice cream mixed with chunks of crunchy chocolate cookies — a true favorite.</p>
+          </div>
+        </div>
+      </a>
+    </div>
+
+    <div class="col">
+      <a href="/icecream/coffee" class="text-decoration-none text-dark">
+        <div class="card shadow-sm h-100">
+          <img src="/static/images/coffee.jpg" class="card-img-top" style="height:225px; object-fit:cover;" alt="Coffee Ice Cream">
+          <div class="card-body">
+            <h5 class="card-title">Coffee Craze</h5>
+            <p class="card-text">Smooth coffee-flavored ice cream made with real espresso for a bold, energizing taste.</p>
+          </div>
+        </div>
+      </a>
+    </div>
+
+    <div class="col">
+      <a href="/icecream/mint" class="text-decoration-none text-dark">
+        <div class="card shadow-sm h-100">
+          <img src="/static/images/mint.jpg" class="card-img-top" style="height:225px; object-fit:cover;" alt="Mint Ice Cream">
+          <div class="card-body">
+            <h5 class="card-title">Minty Fresh</h5>
+            <p class="card-text">Refreshing mint ice cream with dark chocolate chips – cool and crisp with every bite.</p>
+          </div>
+        </div>
+      </a>
+    </div>
+
+    <div class="col">
+      <a href="/icecream/blueberry" class="text-decoration-none text-dark">
+        <div class="card shadow-sm h-100">
+          <img src="/static/images/blueberry.jpeg" class="card-img-top" style="height:225px; object-fit:cover;" alt="Blueberry Ice Cream">
+          <div class="card-body">
+            <h5 class="card-title">Blueberry Burst</h5>
+            <p class="card-text">Creamy delight infused with juicy blueberries and a tangy twist. A fruity frozen dream!</p>
+          </div>
+        </div>
+      </a>
+    </div>
+
+  </div>
+</div>
+
+{% endblock body %}
