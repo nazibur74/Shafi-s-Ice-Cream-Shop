@@ -1,6 +1,3 @@
-Sure! Here's the **GitHub-flavored Markdown** version of your README for **Shafi's Ice Cream Shop**:
-
-````markdown
 # 🍨 Shafi's Ice Cream Shop  
 **Author**: Shafi  
 **Institution**: Daffodil International University
