@@ -1,18 +1,8 @@
 # 🍨 Shafi's Ice Cream Shop  
-**Author**: Shafi  
+**Author**: Nazibur Rahman
 **Institution**: Daffodil International University
 
-**Shafi's Ice Cream Shop** is a **Django-based demo project** that functions as a basic **inventory and sales management system** for small ice cream businesses. It allows users to manage products, process sales, and track stock levels through a secure and user-friendly web interface.
-
----
-
-## 🔧 Features
-
-- ✅ Product & Category Management  
-- ✅ Sales Entry & Invoice Generation  
-- ✅ Real-Time Stock Tracking  
-- ✅ Admin Login & Secure Authentication  
-- ✅ Basic Sales Reports (by date/category)
+**Shafi's Ice Cream Shop** is a **Django-based demo project** that functions as a basic for small ice cream businesses.
 
 ---
 
