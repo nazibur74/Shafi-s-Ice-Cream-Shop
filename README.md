@@ -9,7 +9,7 @@
 ## 💻 Tech Stack
 
 - **Backend**: Django (Python)  
-- **Database**: SQLite  
+- **Database**: MySQL   
 - **Frontend**: HTML5, CSS3, Bootstrap, JavaScript  
 - **Authentication**: Django Auth System  
 - **Templating**: Django Templates
@@ -22,13 +22,6 @@
 # Clone the repository
 git clone https://github.com/your-username/shafi-icecream-shop.git
 cd shafi-icecream-shop
-
-# Create and activate virtual environment
-python -m venv venv
-source venv/bin/activate  # For Windows: venv\Scripts\activate
-
-# Install dependencies
-pip install -r requirements.txt
 
 # Run migrations
 python manage.py migrate
