@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+{% block title %}Milk Shakes{% endblock title %}
+
+{% block body %}
+<div class="container mt-5">
+  <h2 class="text-center mb-4">Our Milk Shakes</h2>
+  <div class="row row-cols-1 row-cols-md-4 g-4">
+    {% for shake in milkshakes %}
+    <div class="col">
+      <div class="card h-100">
+        <img src="{{ shake.image_url }}" class="card-img-top" alt="{{ shake.name }}">
+        <div class="card-body">
+          <h5 class="card-title">{{ shake.name }}</h5>
+          <p class="card-text">{{ shake.description }}</p>
+        </div>
+        <div class="card-footer">
+          <small class="text-muted">Price: ৳{{ shake.price }}</small>
+        </div>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+</div>
+{% endblock body %}

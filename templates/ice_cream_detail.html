@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+{% block title %}{{ flavor.name }} Details{% endblock title %}
+
+{% block body %}
+<div class="container mt-5">
+  <h2>{{ flavor.name }}</h2>
+  <img src="{{ flavor.image_url }}" alt="{{ flavor.name }}" class="img-fluid mb-3" style="max-height: 300px;">
+  <p>{{ flavor.description }}</p>
+  <h5>Price: ৳{{ flavor.price }}</h5>
+
+  <hr>
+  <h4>Order This Ice Cream</h4>
+
+  <form method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit" class="btn btn-primary">Place Order</button>
+  </form>
+</div>
+{% endblock body %}
